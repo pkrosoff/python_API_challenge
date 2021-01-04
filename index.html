@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  
+    <meta charset="UTF-8">
+<!-- Bootstrap bits -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="WebVisualizations/assets/style.css">
+  <title>API Challenge</title>
+</head>
+<!-- Navbar -->
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">API Challenge</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item active">
+          
+        
+          <li><div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Sections
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="pages/weatherpy.html">WeatherPy</a></li>
+              <li><a href="pages/vacationpy.html">VacationPy</a></li>
+              <li role="separator" class="divider"></li>
+            </ul>
+            <li><a class="nav-link" href="pages/observations.html">Observations</a></li>
+            <li><a class="nav-link" href="pages/data.html"><span class="f080">Data</span></a></li>
+            
+          </li>
+          </div>
+        
+        </li>
+      </ul>
+     
+    </div>
+  </nav>
+  <!-- Header -->
+  <h1 class="header">API Weather Project</h1>
+  <h3 class="sub-header">Using Google's API to evaluate weather conditions in various randomized regions throughout the world, and determining ideal vacation destinations based on ideal weather conditions and date.</h3>
+  
+<!-- Content -->
+<div class="column">
+<div class="row">
+  <div class="columnleft">
+    <div class="card">
+      <h2 class="sub-header">Summary: All Pac-12 Universities</h2>
+      <hr>
+      <img class="polaroid" src="WebVisualizations/Visualizations/all_schools.png">
+      <hr>
+      <p class="data-paragraph">This assignment was part of the API unit of the University of Oregon Bootcamp. The raw data used can be found on the <a href= "pages/data.html">Data</a> page. I was interested in this data while looking through admissions vs. tuition data as part of a group project earlier in this course. After determining the supplied weather data was unmotivating at best, I decided to dig up the visualizations I had begun working on during that project, and dive further into those instead.
+      <br>
+      <br> 
+    The above figure was plotted each University and each year evaluated (2001-2018). I used the number of applicants that identify as women divided by total number of admitted applicants, and multiplied that number by 100 to find percent of admitted applicants who identify as women.  For this graph:
+    <br><strong> The slope of the line is ~0.132</strong>
+    <br><strong>The correlation coefficient is ~0.523</strong><br>
+    The best fit line on this figure suggest a weak positive correlation over time. <br><br>
+    Note that there were 12 universities over 17 years which contributed 215 data points to this plot. I omitted the Universities in Utah and Colorado to maintain a more even looking grid for the other visualizations throughout the site. In the other visualizations, I looked at percentage of applicants, rather than percentage of admitted students.
+    
+    </p>
+    </div>
+  </div>
+  <div class="columnright">
+    <div class="card">
+      <h2 class="sub-header">Visualizations</h2>
+      <hr>
+      <div class="row">
+        <!-- <div class="container"> -->
+          <!-- <div class="vizcolumn"> -->
+            
+            <div class="col"><a href=WebVisualizations/Visualizations/Vis1.html><img src="WebVisualizations/Visualizations/OR_schools.png" class="img-fluid" alt="This is figure 1" /></a></div>
+            <div class="col"><a href=WebVisualizations/Visualizations/Vis2.html><img src="WebVisualizations/Visualizations/WA_schools.png" class="img-fluid" alt="This is figure 1" /></a></div>
+      </div>
+            <br>
+            <!-- <div class="w-100"></div> -->
+    
+      <div class="row">
+            <div class="col"><a href=WebVisualizations/Visualizations/Vis3.html><img src="WebVisualizations/Visualizations/CA_schools.png" class="img-fluid" alt="This is figure 1" /></a></div>
+            <div class="col"><a href=WebVisualizations/Visualizations/Vis4.html><img src="WebVisualizations/Visualizations/AZ_schools.png" class="img-fluid" alt="This is figure 1" /></a></div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="columns">
+  <div class="row">
+    <div class="columnleft">
+      <div class="grid-container">
+      <h2 class="sub-header">Summary: Latitude vs. X</h2>
+      <hr>
+      <p class="data-paragraph">This webpage was built as a submission for the Web Design unit of the University of Oregon Bootcamp. The data used can be found on the <a href= "WebVisualizations/Data.html">Data</a> page.</p>
+    </div>
+  </div>
+    
+    <div class="columnright">
+      <div class="grid-container">
+        <h2 class="sub-header">Visualizations</h2>
+        <hr>
+        <div class="container">
+          <div class="row">
+            <div class="col"><a href=WebVisualizations/Visualizations/Vis1.html><img src="WebVisualizations/Visualizations/Fig1.png" class="img-fluid" alt="This is figure 1" /></a></div>
+            <div class="col"><a href=WebVisualizations/Visualizations/Vis2.html><img src="WebVisualizations/Visualizations/Fig2.png" class="img-fluid" alt="This is figure 1" /></a></div>
+            <div class="w-100"></div>
+            <div class="col"><a href=WebVisualizations/Visualizations/Vis3.html><img src="WebVisualizations/Visualizations/Fig3.png" class="img-fluid" alt="This is figure 1" /></a></div>
+            <div class="col"><a href=WebVisualizations/Visualizations/Vis4.html><img src="WebVisualizations/Visualizations/Fig4.png" class="img-fluid" alt="This is figure 1" /></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
